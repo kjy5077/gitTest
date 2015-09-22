@@ -7,9 +7,9 @@ public class ExceptionMall {
 		ExceptionMall em = new ExceptionMall();
 		
 //		try {
-			em.insert("»óÇ°");
-			em.update("°¡Áö");
-			em.delete("¹è");
+			em.insert("ìƒí’ˆ");
+			em.update("ì‚¬ê³¼");
+			em.delete("ë°°");
 //		} catch(FoolException e) {
 //			System.out.println("FoolException!!");
 //		}
@@ -18,7 +18,7 @@ public class ExceptionMall {
 	
 	public void insert(String text) {
 		try {
-			if("»óÇ°".equals(text)) {
+			if("ìƒí’ˆ".equals(text)) {
 				throw new FoolException();
 			}
 			System.out.println(text + "insert");
@@ -30,7 +30,7 @@ public class ExceptionMall {
 	public void update(String text) {
 		
 		try {
-			if("»óÇ°".equals(text)) {
+			if("ìƒí’ˆ".equals(text)) {
 				throw new FoolException();
 			}
 			System.out.println(text + "update");
@@ -42,7 +42,7 @@ public class ExceptionMall {
 	public void delete(String text) {
 		
 		try {
-			if("»óÇ°".equals(text)) {
+			if("ìƒí’ˆ".equals(text)) {
 				throw new FoolException();
 			}
 			System.out.println(text + "delete");
